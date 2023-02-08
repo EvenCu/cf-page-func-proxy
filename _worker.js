@@ -2,7 +2,7 @@ export default {
     async fetch(request, env) {
       let url = new URL(request.url);
       if (url.pathname.startsWith('/')) {
-        url.hostname="maplestory.beanfun.com/download";
+        url.hostname="chat.openai.com/chat";
         let new_request=new Request(url,request);
         return fetch(new_request);
       }
